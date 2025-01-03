@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tag {
+    background-color: tomato;
+    display: inline-block;
+    padding: 2px 8px;
+    color: #444;
+    border-radius: 2px;
+    position: absolute;
+    top: -12px;
+    left: -25px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.container-item {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 3px solid rgb(1, 22, 6);
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 250px repeat(2, 1fr);
+    column-gap: 30px;
+}
+.product-title {
+    background: #eee;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    grid-column: 1/ -1;
+}
+
+.product-img {
+    grid-column: 1/ span 1;
+    width: 250px;
+    height: 240px;
+    object-fit: cover;
+}
+.container-price-shipping {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 16px;
+}
+
+.price {
+    font-size: 16px;
+    color: #232323;
+    font-weight: bolder;
+}
+.shipping {
+    font-size: 10px;
+    color: #605f5f;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: end;
+}
+
+.product-description {
+    margin: 20px 0 8px;
+}
+.more-info:link,
+.more-info:visited {
+    color: #222;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.more-info:hover {
+    text-decoration: none;
+}
+.more-info:active {
+    text-decoration: solid;
+}
+
+.color-box-container {
+    display: grid;
+    grid-template-columns: repeat(6, 15px);
+    margin: 60px auto auto auto;
+    gap: 8px;
+
+    
+}
+.color-box {
+    width: 15px;
+    height: 15px;
+}
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}
+.purple {
+    background-color: purple;
+}
+.tomato {
+    background-color: tomato;
+}
+.yellow {
+    background-color: yellow;
+}
+.brown {
+    background-color: brown;
+}
+
+.product-detail{
+    margin-top: 16px;   
+}
+.product-detail h4{
+    text-transform: uppercase;
+    color: #414040;
+}
+ul {
+    list-style-type: square;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 10px;
+    line-height: 2;
+    }
+
+    .button-add {
+        width: 100%;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        font-size: 14px;
+        background-color: black;
+        color: white;
+        border: none;
+        grid-column: 1/ -1;
+        }
