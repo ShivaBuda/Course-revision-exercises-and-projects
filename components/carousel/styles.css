@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+.carousel {
+    margin: 50px auto;
+    position: relative;
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: green;
+    border-radius: 8px;
+    color: rgb(225, 248, 225);
+    box-shadow: 0 4px 10px rgba(00, 00, 00, 0.2);
+
+    /* border: 2px solid red; */
+}
+
+.carousel--text {
+    padding: 10px 40px 10px 14px;
+}
+.carousel--img {
+    width: 180px;
+    border-radius: 8px;
+    transform: scale(1.5);
+    /* border: 2px solid blue; */
+    margin-left: 80px;
+}
+
+.btn--backward {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.btn {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(00, 00, 00, 0.2);
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn--forward {
+    transform: translate(50%, -50%);
+    right: 0;
+}
+.carousel--text {
+    font-size: 14px;
+}
+
+.active--dot {
+    background-color: green;
+}
+.dots {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid green;
+    border-radius: 100%;
+}
+
+.author--name {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+.author--job {
+    font-size: 8px;
+    font-weight: 400;
+}
