@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table Component</title>
+        <style>
+            /* css reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            table {
+                width: 700px;
+                border-collapse: collapse;
+                text-align: left;
+                margin-top: 20px;
+                background-color: pink;
+            }
+            h1 {
+                margin-top: 60px;
+            }
+            thead th {
+                background-color: #65a30d;
+                color: whitesmoke;
+                width: 20%;
+                /* padding: 10px; */
+            }
+            thead th:first-child,
+            tbody th:first-child {
+                padding: 4px 0px 4px 20px;
+            }
+            thead th {
+                width: 20%;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #f3f3f3;
+            }
+            tbody tr:nth-child(even) {
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Table Component</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chair</th>
+                    <th>Barrel Chair</th>
+                    <th>Recliner</th>
+                    <th>Windsor Chair</th>
+                    <th>Rocking Chair</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Width</th>
+                    <td>81 cm</td>
+                    <td>75 cm</td>
+                    <td>90 cm</td>
+                    <td>79 cm</td>
+                </tr>
+                <tr>
+                    <th>Depth</th>
+                    <td>60 cm</td>
+                    <td>63 cm</td>
+                    <td>61 cm</td>
+                    <td>56 cm</td>
+                </tr>
+                <tr>
+                    <th>Weight</th>
+                    <td>20 kg</td>
+                    <td>8 kg</td>
+                    <td>5 kg</td>
+                    <td>3 kg</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

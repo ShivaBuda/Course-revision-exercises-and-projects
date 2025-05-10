@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pagination</title>
+        <style>
+            .pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                margin-top: 60px;
+            }
+            .pagination--btn--prev,
+            .pagination--btn--next {
+                border: 2px solid #84cc16;
+                cursor: pointer;
+                background: none;
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all ease-in 0.2s;
+            }
+
+            .pagination--btn--prev:hover,
+            .pagination--btn--next:hover {
+                background-color: #84cc16;
+            }
+            .icon {
+                stroke: #84cc16;
+                width: 28px;
+                height: 28px;
+                transition: all ease-in 0.2s;
+            }
+            .pagination--btn--prev:hover .icon,
+            .pagination--btn--next:hover .icon {
+                stroke: #fff;
+            }
+            .pagination--numbers {
+                display: flex;
+                gap: 10px;
+            }
+            .pagination__link:link,
+            .pagination__link:visited {
+                text-decoration: none;
+                color: #84cc16;
+                /* padding: 5px 10px; */
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .pagination__link:hover,
+            .pagination__link:active,
+            .pagination__link.page__link--active {
+                color: #fff;
+                background-color: #84cc16;
+                transition: all ease 0.7s;
+            }
+            .dots {
+                font-size: 18px;
+                color: #a1a1aa;
+                display: flex;
+                align-items: end;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pagination">
+            <div class="pagination">
+                <button class="pagination--btn--prev">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="pagination--numbers">
+                    <a href="#" class="pagination__link">1</a>
+                    <a href="#" class="pagination__link">2</a>
+                    <a href="#" class="pagination__link">3</a>
+                    <a href="#" class="pagination__link page__link--active"
+                        >4</a
+                    >
+                    <a href="#" class="pagination__link">5</a>
+                    <span class="dots">...</span>
+                    <a href="#" class="pagination__link">22</a>
+                </div>
+                <button class="pagination--btn--next">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
