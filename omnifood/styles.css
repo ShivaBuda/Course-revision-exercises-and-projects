@@ -6,11 +6,11 @@ RESOURCES:
 
 
 --FONT SIZES (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 28 / 32 / 36 / 40 / 48 / 56 / 64
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 28 / 32 / 36 / 40 / 48 / 56 / 64/ 72 / 80 / 96 / 112 / 128 / 144 / 160
 
 --FONT WEIGHTS
 -default: 400
-300 / 400 / 500 / 600 / 700 / 800 / 900
+300 / 400 / 500 / 600 / 700
 
 --LINE HEIGHTS
 Default: 1
@@ -28,6 +28,7 @@ Default: 1
 */
 :root {
     --light_green_color: #edf7ee;
+    --light_green_color_2: #c9e7cb;
     --primary_green_color: #4caf50;
     --dark_green_color: #449e48;
 }
@@ -48,12 +49,66 @@ body {
 }
 
 /* ========= HELPER CLASS ================ */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    /* padding: 0 4.8rem; */
+}
 .mr_sm {
     margin-right: 1.6rem;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+    align-items: center
+    ;
+}
+
+.grid_col_2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_col_3 {
+    grid-template-columns: repeat(3, 1fr);
 }
 /* ====================================== */
 
 /* =========== GENERAL COMPONENTs ====== */
+.heading_primary,
+.heading_secondary
+.heading_tertiary {
+    font-weight: 700;
+    color: #222;
+    letter-spacing: -0.5px;
+}
+.heading_primary {
+    line-height: 1.05;
+    font-size: 5.2rem;
+    margin-bottom: 3.2rem;
+}
+
+.heading_secondary {
+    font-size: 3.2rem;
+    line-height: 1.3;
+    margin-bottom: 9.6rem;
+}
+
+.heading_tertiary {
+    font-size: 1.8rem;
+    /* line-height: 1.3;  */
+    margin-bottom: 1.8rem;
+}
+.sub_heading {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--dark_green_color);
+    letter-spacing: 0.55px;
+    margin-bottom: 1.6rem;
+}
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -166,15 +221,6 @@ body {
     margin: 0 auto;
     gap: 9.6rem;
 }
-
-.heading_primary {
-    letter-spacing: -0.5px;
-    font-size: 5.2rem;
-    font-weight: 700;
-    line-height: 1.05;
-    color: #333;
-    margin-bottom: 3.2rem;
-}
 .hero_img {
     width: 100%;
 }
@@ -216,4 +262,67 @@ body {
 .customer_number span {
     color: var(--primary_green_color);
     font-size: 2rem;
+}
+
+/* ================================== */
+/* =========== HOW IT WORKS SECTION ========== */
+.section_how {
+    padding: 9.6rem 0;
+}
+
+.step_img_wrapper{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.step_img {
+    width: 36%;
+}
+
+.step_number {
+    font-size: 8rem;
+    font-weight: 600;
+    color: var(--light_green_color_2);
+    margin-bottom: 1.6rem;
+}
+
+.step_description_txt{
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #777;
+    margin-bottom: 4.8rem;
+
+}
+.step_img_wrapper {
+    position: relative;
+    margin-left: 2.4rem;
+}
+
+.step_img_wrapper::after,
+.step_img_wrapper::before {
+    content: "";
+    display: block;
+    width: 60%;
+    border-radius: 50%;
+    position: absolute; 
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.step_img_wrapper::after{
+    background-color: var(--light_green_color);
+    z-index: -2;
+     width: 60%;
+    padding-bottom: 60%;
+}
+
+.step_img_wrapper::before{
+    background-color: var(--light_green_color_2);
+    z-index: -1;
+     width: 50%;
+    padding-bottom: 50%;
+
 }
