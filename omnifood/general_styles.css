@@ -33,6 +33,7 @@ Default: 1
     --primary_green_color: #4caf50;
     --dark_green_color: #449e48;
 }
+/* =========== CSS RESET ============ */
 * {
     padding: 0;
     margin: 0;
@@ -57,10 +58,20 @@ body {
 .mr_sm {
     margin-right: 1.6rem;
 }
+.mt_md {
+    margin-top: 3.2rem;
+}
+.mb_md {
+    margin-bottom: 3.2rem !important;
+}
 .grid {
     display: grid;
     column-gap: 6.4rem;
     row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 .grid_col_2 {
     grid-template-columns: repeat(2, 1fr);
@@ -68,6 +79,9 @@ body {
 
 .grid_col_3 {
     grid-template-columns: repeat(3, 1fr);
+}
+.grid_col_4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .txt_center {
@@ -186,6 +200,6 @@ body {
 
 .list_icon {
     color: var(--dark_green_color);
-    font-size: 2Srem;
+    font-size: 2rem;
 }
 /* ============================================ */

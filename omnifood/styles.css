@@ -1,177 +1,3 @@
-/* ---- TYPOGRAPHY ---- 
-RESOURCES:
---unsplash.com >> for images
---uifaces.co >> for avatars
---maketintsandshades.com >> for colors
---ionic.io/ionicons >> for icons
-
-
---FONT SIZES (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 28 / 32 / 36 / 40 / 48 / 56 / 64/ 72 / 80 / 96 / 112 / 128 / 144 / 160
-
---FONT WEIGHTS
--default: 400
-300 / 400 / 500 / 600 / 700
-
---LINE HEIGHTS
-Default: 1
-
---SPSACING SYSTEM
-2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 40 / 48 / 56 / 64/ 72 / 80 / 96 / 112 / 128 / 144 / 160
-
---COLORS
-
---Primary: #ff6f20
---Secondary: #f4f4f4
---Tertiary: #fff
---Text: #666
---Background: #edf7ee
-*/
-:root {
-    --light_green_color: #edf7ee;
-    --light_green_color_2: #c9e7cb;
-    --primary_green_color: #4caf50;
-    --dark_green_color: #449e48;
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-body {
-    font-family: "Quicksand", sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #333;
-}
-
-/* ========= HELPER CLASS ================ */
-.container {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-.mr_sm {
-    margin-right: 1.6rem;
-}
-.grid {
-    display: grid;
-    column-gap: 6.4rem;
-    row-gap: 9.6rem;
-}
-.grid_col_2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid_col_3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.txt_center {
-    text-align: center;
-}
-
-/* ====================================== */
-
-/* =========== GENERAL COMPONENTs ====== */
-.heading_primary,
-.heading_secondary .heading_tertiary {
-    font-weight: 700;
-    color: #222;
-    letter-spacing: -0.5px;
-}
-.heading_primary {
-    line-height: 1.05;
-    font-size: 5.2rem;
-    margin-bottom: 3.2rem;
-}
-
-.heading_secondary {
-    font-size: 3.2rem;
-    line-height: 1.3;
-    margin-bottom: 8rem;
-}
-
-.heading_tertiary {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
-}
-.sub_heading {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--dark_green_color);
-    letter-spacing: 0.55px;
-    margin-bottom: 1.6rem;
-}
-.btn:link,
-.btn:visited {
-    display: inline-block;
-    text-decoration: none;
-    padding: 1.6rem 3.2rem;
-    font-size: 2rem;
-    border-radius: 8px;
-    transition: all 0.2s;
-    font-weight: 500;
-}
-
-.btn__full:link,
-.btn__full:visited {
-    font-size: 2rem;
-    padding: 1.6rem 3.2rem;
-    background-color: var(--primary_green_color);
-    color: #fff;
-    border-radius: 8px;
-    transition: all 0.2s;
-}
-
-.btn__full:hover,
-.btn__full:active {
-    background-color: var(--dark_green_color);
-    color: #fff;
-}
-
-.btn__outline:link,
-.btn__outline:visited {
-    font-size: 2rem;
-    padding: 1.6rem 3.2rem;
-    background-color: #fff;
-    color: #555;
-    border-radius: 8px;
-    transition: all 0.2s;
-}
-
-.btn__outline:hover,
-.btn__outline:active {
-    background-color: var(--light_green_color);
-    box-shadow: inset 0 0 0 2px var(--primary_green_color);
-}
-
-.all_recipes_link:link,
-.all_recipes_link:visited {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--primary_green_color);
-    font-size: 1.6rem;
-    font-weight: 600;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
-    margin-top: 4rem;
-    transition: all 0.3s;
-}
-
-.all_recipes_link:hover,
-.all_recipes_link:active {
-    border-bottom: 2px solid transparent;
-    color: var(--dark_green_color);
-}
-/* ============================================ */
-
 /* =========== HEADER ========================= */
 .logo img {
     height: 2.4rem;
@@ -438,24 +264,6 @@ body {
     background-color: #ff6f20;
 }
 
-.list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-}
-.list_itm {
-    display: flex;
-    gap: 1.6rem;
-    align-items: center;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.list_icon {
-    color: var(--dark_green_color);
-    font-size: 2Srem;
-}
 /* =======================================*/
 /* =========== TESTIMONIAL SECTION =============*/
 .section_testimonial {
@@ -473,7 +281,6 @@ body {
 }
 .testimonial_wrapper {
     padding: 8rem;
-    border: 2px solid red;
 }
 .testimonial_img {
     width: 6.4rem;
@@ -501,7 +308,7 @@ body {
     gap: 1.6rem;
     padding: 1.6rem;
 }
-.gallery_itm{
+.gallery_itm {
     overflow: hidden;
 }
 .gallery_itm img {
@@ -513,4 +320,105 @@ body {
     transform: scale(1.1);
 }
 
+/* =======================================*/
+
+/* =========== PRICING SECTION =============*/
+.section_pricing {
+    padding: 9.6rem 0;
+}
+
+.price_plan_header {
+    text-align: center;
+}
+.plan_name{
+    text-transform: uppercase;
+    color: var(--dark_green_color);
+    margin-bottom: 1.6rem;
+    font-weight: 600;
+}
+
+.price_plan {
+    display: grid;
+    width: 75%;
+    border-radius: 8px;
+}
+
+.price_plan--starter {
+border: 1px solid var(--light_green_color);
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+justify-self: end;
+ padding: 4.6rem;
+}
+.price_plan--complete{
+    background-color: var(--light_green_color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     padding: 4.8rem;
+     position: relative;
+     overflow: hidden;
+}
+.price_plan--complete::after{
+    position: absolute;
+    content: "Best Value";
+    top: 7%;
+    right: -16%;
+    transform: rotate(45deg);
+    color: var(--dark_green_color);
+    background-color: yellow;
+    padding: 1rem 8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.plan_price {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--dark_green_color);
+    margin-bottom: 1.6rem;
+}
+
+.price_plan span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #555;
+    margin-right: 0.6rem;
+}
+
+.btn_wrapper {
+    text-align: center;
+}
+.plan_txt {
+    font-size: 1.2rem;
+    margin-bottom: 3.2rem;
+    color: #666;
+}
+.meal_term{
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 1.6rem;
+    font-weight: 500;
+}
+.feature_icon {
+    color: var(--dark_green_color);
+    font-size: 1.8rem;
+    margin-right: 1.6rem;
+    background-color: var(--light_green_color);
+    padding: 1.2rem;
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature_title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark_green_color);
+    margin-bottom: 1.2rem;
+}
+.feature_txt{
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.5;
+    font-weight: 500;
+}
 /* =======================================*/
