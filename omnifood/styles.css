@@ -330,7 +330,7 @@
 .price_plan_header {
     text-align: center;
 }
-.plan_name{
+.plan_name {
     text-transform: uppercase;
     color: var(--dark_green_color);
     margin-bottom: 1.6rem;
@@ -344,19 +344,19 @@
 }
 
 .price_plan--starter {
-border: 1px solid var(--light_green_color);
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-justify-self: end;
- padding: 4.6rem;
+    border: 1px solid var(--light_green_color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    justify-self: end;
+    padding: 4.6rem;
 }
-.price_plan--complete{
+.price_plan--complete {
     background-color: var(--light_green_color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-     padding: 4.8rem;
-     position: relative;
-     overflow: hidden;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
 }
-.price_plan--complete::after{
+.price_plan--complete::after {
     position: absolute;
     content: "Best Value";
     top: 7%;
@@ -368,7 +368,6 @@ justify-self: end;
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
-
 }
 .plan_price {
     font-size: 4rem;
@@ -392,7 +391,7 @@ justify-self: end;
     margin-bottom: 3.2rem;
     color: #666;
 }
-.meal_term{
+.meal_term {
     font-size: 1.2rem;
     color: #777;
     margin-bottom: 1.6rem;
@@ -409,16 +408,114 @@ justify-self: end;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.feature_title{
+.feature_title {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--dark_green_color);
     margin-bottom: 1.2rem;
 }
-.feature_txt{
+.feature_txt {
     font-size: 1.4rem;
     color: #333;
     line-height: 1.5;
     font-weight: 500;
 }
 /* =======================================*/
+/* =========== CTA SECTION =============*/
+.section_cta {
+    padding: 9.6rem 0;
+}
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* height: 50rem; */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(34, 83, 36, 0.6),
+        rgba(119, 247, 125, 0.678)
+    );
+    overflow: hidden;
+}
+
+.cta_img_wrapper {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(64, 136, 68, 0.63),
+            rgba(76, 175, 79, 0.1)
+        ),
+        url("./images/eating.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cta_txt_wrapper{
+    padding: 4.8rem;;
+}
+.heading_cta {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4.8rem;
+}
+.cta_description_txt {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom:3.2rem;
+}
+.cta_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+}
+
+.cta_form label{
+    display: block;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+.cta_form input,
+.cta_form select{
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 2.4rem;
+    width:100%;
+    font-family: inherit;
+    font-weight: 600;
+    outline: none;
+    color: #555;
+}
+.cta_form input::placeholder{
+    color: #bbb;
+}
+
+.btn_sign_up{
+    background-color: var(--primary_green_color);
+    color: #fff;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border:none;
+    text-transform: uppercase;
+    align-self: center;
+    margin-top: .4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn_sign_up:hover{
+    background-color: var(--dark_green_color);
+    cursor: pointer;
+}
+
+/* *********** FOOTER SECTION ************ */
+.section_footer {
+    background-color: var(--light_green_color);
+    padding: 9.6rem 0;
+}
+/* *************************************** */
