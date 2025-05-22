@@ -7,9 +7,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--light_green_color);
-    border: 3px solid #555;
     padding: 0 4.8rem;
     height: 9.6rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.105);
+    /* border: 2px solid pink; */
 }
 /* ================================== */
 /* ========= NAVIGATION ============= */
@@ -194,6 +195,7 @@
 /* =========== MEALS SECTION =============*/
 .section_meals {
     padding: 9.6rem 0;
+    background-color: var(--light_green_color);
 }
 
 .meal {
@@ -269,7 +271,7 @@
 .section_testimonial {
     display: grid;
     grid-template-columns: 55fr 45fr;
-    background-color: var(--light_green_color);
+    /* background-color: var(--light_green_color); */
 }
 
 .testimonials {
@@ -325,6 +327,7 @@
 /* =========== PRICING SECTION =============*/
 .section_pricing {
     padding: 9.6rem 0;
+    background-color: var(--light_green_color);
 }
 
 .price_plan_header {
@@ -514,8 +517,69 @@
 }
 
 /* *********** FOOTER SECTION ************ */
-.section_footer {
+.footer {
     background-color: var(--light_green_color);
     padding: 9.6rem 0;
+}
+.footer_logo_wrapper {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+}
+.footer_logo .logo {
+    width: 100%;
+}
+.copyright{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #777 
+}
+.footer_heading{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--dark_green_color);
+    margin-bottom: 2.4rem;
+}
+.footer_nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact_us{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    font-family: inherit;
+}
+
+.contact_us_wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    /* gap: 1rem; */
+}
+.footer_link:link,
+.footer_link:visited {
+    font-size: 1.6rem;
+    color: #2b2929;
+    text-decoration: none;
+    margin-bottom: 1.2rem;
+    transition: all 0.2s ease-in;
+}
+
+.footer_link:hover,
+.footer_link:active {
+    color: var(--dark_green_color);
+} 
+
+.footer--social {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
 }
 /* *************************************** */
