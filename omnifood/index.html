@@ -11,6 +11,7 @@
             rel="stylesheet" />
         <link rel="stylesheet" href="general_styles.css" />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="queries.css" />
     </head>
     <body>
         <header class="header">
@@ -25,9 +26,19 @@
                     <li><a class="nav_link" href="#">Meals</a></li>
                     <li><a class="nav_link" href="#">Testimonials</a></li>
                     <li><a class="nav_link" href="#">Pricing</a></li>
-                    <li><a class="nav_link nav_cta" href="#">Try for free</a></li>
+                    <li>
+                        <a class="nav_link nav_cta" href="#">Try for free</a>
+                    </li>
                 </ul>
             </nav>
+            <button class="btn_nav_menu">
+                <ion-icon
+                    class="btn_nav_menu_icon"
+                    name="menu-outline"></ion-icon>
+                <ion-icon
+                    class="btn_nav_menu_icon"
+                    name="close-outline"></ion-icon>
+            </button>
         </header>
 
         <main>
@@ -114,7 +125,7 @@
 
             <!-- ********** HOW IT WORKS SECTION ********** -->
             <section class="section_how">
-                <div class="how_steps container">
+                <div class="container">
                     <span class="sub_heading">How it works</span>
                     <h2 class="heading_secondary">
                         We make healthy eating easy and convenient in 3 simple
@@ -122,7 +133,7 @@
                     </h2>
                 </div>
 
-                <div class="container grid grid_col_2">
+                <div class="how_steps container grid grid_col_2">
                     <div class="step_txt_wrapper">
                         <p class="step_number">01</p>
                         <h3 class="heading_tertiary">
@@ -191,7 +202,7 @@
                         Omnifood AI chooses from 5,000 recipes
                     </h2>
                 </div>
-                <div class="container grid grid_col_3">
+                <div class="meals_wrapper grid_col_3 container">
                     <div class="meal">
                         <img
                             src="images/meals/meal-1.jpg"
@@ -518,7 +529,7 @@
                         </ul>
 
                         <div class="btn_wrapper">
-                            <a href="#" class="btn btn__full mr_sm mt_md"
+                            <a href="#" class="btn btn__full mt_md"
                                 >Start eating healthy</a
                             >
                         </div>
