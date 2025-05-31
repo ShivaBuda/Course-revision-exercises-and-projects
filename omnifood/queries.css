@@ -65,8 +65,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.95);
         transform: translateX(100%);
+        backdrop-filter: blur(10px);
 
         display: flex;
         align-items: center;
@@ -91,10 +92,11 @@
         display: inline-block;
     }
 
-    .nav_open ion-icon[name="close-outline"] {
+    .nav_open .btn_nav_close {
         display: block;
     }
-    .nav_open ion-icon[name="menu-outline"] {
+
+    .nav_open .btn_nav_open {
         display: none;
     }
 
@@ -274,11 +276,11 @@
     .cta_form {
         gap: 0;
     }
-    .footer_heading{
+    .footer_heading {
         font-size: 2rem;
     }
 
-    .footer_logo_wrapper{
+    .footer_logo_wrapper {
         width: 14rem;
     }
 }

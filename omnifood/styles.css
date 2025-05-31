@@ -2,15 +2,28 @@
 .logo img {
     height: 2.4rem;
 }
+
+.sticky_nav .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f0f7f1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.048);
+}
+
+.sticky_nav .section_hero {
+    margin-top: 8rem;
+}
 .header {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--light_green_color);
     padding: 0 4.8rem;
+    background-color: var(--light_green_color);
     height: 9.6rem;
+    z-index: 10;
 }
+
 /* ================================== */
 /* ========= NAVIGATION ============= */
 
@@ -65,7 +78,7 @@
     height: 4.8rem;
     width: 4.8rem;
 } */
-.btn_nav_menu_icon ion-icon[name="close-outline"] {
+.btn_nav_close {
     display: none;
 }
 

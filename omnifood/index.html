@@ -2,8 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Our mission is to bring you delicious, healthy meals
+        that are ready to eat in minutes. No more meal prep,
+        no more grocery shopping, just fresh food delivered
+        to your door. We have delivered 20,073+ meals to our
+        customers in 2024." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <title>Welcome | Omnifood</title>
+        <link
+            rel="shortcut icon"
+            href="images/favicon_64.png"
+            type="image/x-icon" />
+        <link rel="apple-touch-icon" href="images/apple_touch_icon.png" />
+        <link rel="manifest" href="manifest.webmanifest" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -12,6 +26,10 @@
         <link rel="stylesheet" href="general_styles.css" />
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="queries.css" />
+        <script
+            defer
+            src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+        <script defer src="script.js"></script>
     </head>
     <body>
         <header class="header">
@@ -22,22 +40,26 @@
             </a>
             <nav class="nav">
                 <ul class="nav_list">
-                    <li><a class="nav_link" href="#">How it works</a></li>
-                    <li><a class="nav_link" href="#">Meals</a></li>
-                    <li><a class="nav_link" href="#">Testimonials</a></li>
-                    <li><a class="nav_link" href="#">Pricing</a></li>
                     <li>
-                        <a class="nav_link nav_cta" href="#">Try for free</a>
+                        <a class="nav_link" href="#how_it_works"
+                            >How it works</a
+                        >
+                    </li>
+                    <li><a class="nav_link" href="#meals">Meals</a></li>
+                    <li>
+                        <a class="nav_link" href="#testimonials"
+                            >Testimonials</a
+                        >
+                    </li>
+                    <li><a class="nav_link" href="#pricing">Pricing</a></li>
+                    <li>
+                        <a class="nav_link nav_cta" href="#cta">Try for free</a>
                     </li>
                 </ul>
             </nav>
             <button class="btn_nav_menu">
-                <ion-icon
-                    class="btn_nav_menu_icon"
-                    name="menu-outline"></ion-icon>
-                <ion-icon
-                    class="btn_nav_menu_icon"
-                    name="close-outline"></ion-icon>
+                <ion-icon class="btn_nav_open" name="menu-outline"></ion-icon>
+                <ion-icon class="btn_nav_close" name="close-outline"></ion-icon>
             </button>
         </header>
 
@@ -58,7 +80,7 @@
                             customers in 2024 alone. Join us and experience the
                             convenience of healthy eating.
                         </p>
-                        <a href="#" class="btn btn__full mr_sm"
+                        <a href="#cta" class="btn btn__full mr_sm"
                             >Start eating healthy</a
                         >
                         <a href="#" class="btn btn__outline"
@@ -91,10 +113,18 @@
                         </div>
                     </div>
                     <div class="hero_img_wrapper">
-                        <img
-                            src="images/hero.png"
-                            alt="Bowl and trays fill with foods and Woman enjoying a meal"
-                            class="hero_img" />
+                        <picture>
+                            <source
+                                srcset="./images/hero.webp"
+                                type="image/webp" />
+                            <source
+                                srcset="./images/hero.png"
+                                type="image/png" />
+                            <img
+                                src="images/hero.png"
+                                alt="Bowl and trays fill with foods and Woman enjoying a meal"
+                                class="hero_img" />
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -124,7 +154,7 @@
             </section>
 
             <!-- ********** HOW IT WORKS SECTION ********** -->
-            <section class="section_how">
+            <section class="section_how" id="how_it_works">
                 <div class="container">
                     <span class="sub_heading">How it works</span>
                     <h2 class="heading_secondary">
@@ -195,7 +225,7 @@
             </section>
 
             <!-- *********** MEAL SECTION ********* -->
-            <section class="section_meals">
+            <section class="section_meals" id="meals">
                 <div class="container txt_center">
                     <span class="sub_heading"> Meals </span>
                     <h2 class="heading_secondary">
@@ -346,7 +376,7 @@
             </section>
 
             <!--********** TESTIMONIAL SECTION ************ -->
-            <section class="section_testimonial">
+            <section class="section_testimonial" id="testimonials">
                 <div class="testimonial_wrapper">
                     <span class="sub_heading">Testimonials</span>
                     <h2 class="heading_secondary">What our customers say</h2>
@@ -487,7 +517,7 @@
             </section>
 
             <!-- ********** PRICING SECTION ************** -->
-            <section class="section_pricing">
+            <section class="section_pricing" id="pricing">
                 <div class="container">
                     <span class="sub_heading"> Pricing </span>
                     <h2 class="heading_secondary">Choose your meal plan</h2>
@@ -630,7 +660,7 @@
                 </div>
             </section>
             <!-- ********** CTA SECTION ************** -->
-            <section class="section_cta">
+            <section class="section_cta" id="cta">
                 <div class="container">
                     <div class="cta">
                         <div class="cta_txt_wrapper">
@@ -703,12 +733,16 @@
         <footer class="footer">
             <div class="container grid grid_col_5">
                 <div class="footer_logo_wrapper">
-                    <img
-                        src="./images/omnifood-logo.png"
-                        alt="Omnifood logo"
-                        class="logo" />
+                    <a href="#" class="footer_logo">
+                        <img
+                            src="./images/omnifood-logo.png"
+                            alt="Omnifood logo"
+                            class="logo" />
+                    </a>
                     <p class="copyright">
-                        Copyright &copy; 2025, Omnifood. All Rights reserved.
+                        Copyright &copy;
+                        <span class="copyright_year">2000</span>, Omnifood. All
+                        Rights reserved.
                     </p>
                 </div>
 
